@@ -1,0 +1,9 @@
+@import './../../palette';
+
+.typography {
+  padding: 16px;
+}
+
+.scss-variable {
+  color: nth(nth($palette-accent, 6), 2);
+}

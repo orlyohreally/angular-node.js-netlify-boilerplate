@@ -1,0 +1,36 @@
+<div class="palettes">
+  <div class="mat-h1">Palettes</div>
+  <div
+    class="color-palettes"
+    fxLayout="row"
+    fxLayout.lt-sm="column"
+    fxLayoutAlign="center center"
+  >
+    <app-color-palette-card
+      class="color-palette"
+      fxFlex="1 1 auto"
+      title="Primary"
+      [color]="primary"
+      classes="color-palette__color_primary"
+    ></app-color-palette-card>
+    <app-color-palette-card
+      fxFlex="1 1 auto"
+      class="color-palette"
+      title="Accent"
+      [color]="accent"
+      classes="color-palette__color_accent"
+    ></app-color-palette-card>
+    <app-color-palette-card
+      fxFlex="1 1 auto"
+      class="color-palette"
+      title="Warn"
+      [color]="warn"
+      classes="color-palette__color_warn"
+    ></app-color-palette-card>
+  </div>
+  <div>
+    Color palettes were created using
+    <a href="http://mcg.mbitson.com/">MATERIAL DESIGN PALETTE GENERATOR</a> for
+    selected colors
+  </div>
+</div>

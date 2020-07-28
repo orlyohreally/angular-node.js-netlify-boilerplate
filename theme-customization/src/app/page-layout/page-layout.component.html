@@ -1,0 +1,27 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    color="accent"
+    #sidenav
+    [mode]="(smallScreen | async)?.matches ? 'over' : 'side'"
+    fixedInViewport="true"
+    [opened]="!(smallScreen | async)?.matches"
+  >
+    <app-main-navigation class="main-navigation"></app-main-navigation>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button
+          class="menu-toggle"
+          mat-icon-button
+          (click)="sidenav.toggle()"
+          *ngIf="(smallScreen | async)?.matches"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>{{ title }}</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

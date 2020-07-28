@@ -1,0 +1,26 @@
+<div class="main-navigation" fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <a href="https://material.angular.io/" target="_blank">
+      <img class="logo" src="/assets/angular-logo.png" />
+    </a>
+    <div class="mat-h2 name">Theme Customization</div>
+  </div>
+  <mat-list class="main-navigation-links">
+    <mat-list-item
+      class="main-navigation-links__link"
+      routerLink="/palettes"
+      routerLinkActive="main-navigation-links__link_active"
+    >
+      <mat-icon mat-list-icon>format_paint</mat-icon>
+      Palettes
+    </mat-list-item>
+    <mat-list-item
+      class="main-navigation-links__link"
+      routerLink="/typography"
+      routerLinkActive="main-navigation-links__link_active"
+    >
+      <mat-icon mat-list-icon>text_fields</mat-icon>
+      Typography
+    </mat-list-item>
+  </mat-list>
+</div>

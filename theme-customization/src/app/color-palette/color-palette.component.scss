@@ -1,0 +1,29 @@
+@import './../../palette';
+
+.palettes {
+  // display: flex;
+  // flex-direction: column;
+  padding: 16px;
+}
+
+.color-palettes {
+  // display: flex;
+  // flex-direction: row;
+}
+
+.color-palette {
+  // flex: 1;
+  width: 100%;
+}
+
+::ng-deep .color-palette__color_primary {
+  background-color: nth(nth($palette-primary, 6), 2);
+}
+
+::ng-deep .color-palette__color_accent {
+  background-color: nth(nth($palette-accent, 6), 2);
+}
+
+::ng-deep .color-palette__color_warn {
+  background-color: nth(nth($palette-warn, 6), 2);
+}

@@ -1,0 +1,33 @@
+.main-navigation {
+  padding: 16px 0;
+}
+
+.main-navigation-links {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.main-navigation-links__link {
+  cursor: pointer;
+  outline: none;
+}
+
+.main-navigation-links__link_active {
+  background: gray;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin: 16px 0;
+}
+
+.logo-source {
+  font-size: 8px;
+}
+
+.name {
+  padding: 8px;
+  word-break: break-word;
+  text-align: center;
+}

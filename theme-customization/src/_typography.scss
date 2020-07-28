@@ -1,0 +1,36 @@
+@function theme-foreground($color) {
+  @return (
+    base: $color,
+    divider: $white-12-opacity,
+    dividers: $white-12-opacity,
+    disabled: rgba($color, 0.38),
+    disabled-button: rgba($color, 0.38),
+    disabled-text: rgba($color, 0.38),
+    hint-text: rgba($color, 0.38),
+    secondary-text: rgba($color, 0.54),
+    icon: rgba($color, 0.54),
+    icons: rgba($color, 0.54),
+    text: $color,
+    slider-off: rgba($color, 0.26),
+    slider-off-active: rgba($color, 0.38),
+    slider-min: rgba($color, 0.38)
+  );
+}
+
+$text-color: #424242;
+$gray-foreground: theme-foreground($text-color);
+$custom-typography: mat-typography-config(
+  $font-family: 'Roboto',
+  $display-4: mat-typography-level(110px, 112px, 300),
+  $display-3: mat-typography-level(54px, 56px, 400),
+  $display-2: mat-typography-level(43px, 48px, 400),
+  $display-1: mat-typography-level(32px, 40px, 400),
+  $headline: mat-typography-level(22px, 32px, 400),
+  $title: mat-typography-level(18px, 32px, 500),
+  $subheading-2: mat-typography-level(14px, 28px, 400),
+  $subheading-1: mat-typography-level(13px, 24px, 400),
+  $body-2: mat-typography-level(12px, 24px, 500),
+  $body-1: mat-typography-level(12px, 20px, 400),
+  $caption: mat-typography-level(10px, 20px, 400),
+  $button: mat-typography-level(12px, 14px, 500)
+);
