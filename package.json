@@ -2,7 +2,7 @@
   "name": "angular-netlify",
   "version": "1.0.0",
   "description": "Boilerplate for Angular + Node.js project prepared for netlify",
-  "main": "server.js",
+  "main": "functions/server.js",
   "scripts": {
     "build": "cd theme-customization && npm install && ng build --prod && cd ../ && netlify-lambda build express",
     "start": "nodemon server.js"
