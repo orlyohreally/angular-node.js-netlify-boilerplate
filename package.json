@@ -22,10 +22,10 @@
   "homepage": "https://github.com/orlyohreally/angular-node.js-netlify-boilerplate#readme",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "netlify-lambda": "^2.0.1",
     "nodemon": "^2.0.4",
-    "serverless-http": "^2.5.0"
+    "serverless-http": "^2.5.0",
+    "body-parser": "^1.19.0"
   }
 }
